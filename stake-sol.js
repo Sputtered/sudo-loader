@@ -1,7 +1,6 @@
 (function () {
-‘use strict’;
+‘use strict’
 
-```
 // Remove any existing instance
 document.getElementById('sudo-ui')?.remove();
 
@@ -716,6 +715,4 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
 
 window.addEventListener('beforeunload', () => lsSet('sudo_balance', balance));
 window.__sudoSet = v => { balance = safeN(v, 0); lsSet('sudo_balance', balance); updateBal(); updateBetBtn(); };
-```
-
 })();
